@@ -5,9 +5,9 @@ export default function SearchForm(props) {
         <form>
             <div className="form-group">
                 <label >Search Book</label>
-                <input type="text" placeholder = "Book Name" className="form-control" name = "search" value = {props.search} onChange = {props.handleInputChange}/>
+                <input type="text" id="bookName" placeholder="Book Name" className="form-control" name="search" value={props.search} onChange={props.handleInputChange} />
             </div>
-            <button type="submit" className="btn btn-success" onClick = {props.handleSubmit}>Submit</button>
+            <button type="submit" className="btn btn-success" onClick={props.handleSubmit}>Submit</button>
         </form>
     )
 }
